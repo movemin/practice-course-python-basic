@@ -13,7 +13,22 @@ paid = int(input("지불 금액: "))
 change = paid - price
 
 # 아래에 1000원, 500원, 100원 개수를 계산하여 출력하세요
+# 1000원으로 나눈 값을 정수로 변환 하여 개수를 변수선언
+one_thousand_coin = int(change/1000) 
+# 500원 갯수를 구하기 위해 1000원으로 나눈 나머지를 변수 선언
+coin1 = change%1000 
+# 500원으로 나눈 값을 정수로 변환 하여 개수를 변수선언
+five_hundred_coin = int(coin1/500)
+# 100원 갯수를 구하기 위해 1000원으로 나눈 나머지를 변수 선언
+coin2 = coin1%500 
+# 100원으로 나눈 값을 정수로 변환 하여 개수를 변수선언
+one_hundred_coin = int(coin2/100) 
 
+
+print(f"거스름돈: {change}원") # 거스름돈
+print(f"1000원: {one_thousand_coin}개") # 1000원 개수
+print(f"500원: {five_hundred_coin}개") # 500원 개수
+print(f"100원: {one_hundred_coin}개") # 100원 개수
 
 """
 [실행 결과 예시] (입력: 2300, 5000)

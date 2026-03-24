@@ -23,7 +23,19 @@ price3 = 55000
 discount3 = 0.15
 
 # 아래에 각 상품의 할인 가격을 계산하고 총액을 구하세요
-
+# 노트북 가격 * (1-0.1)을 정수의 변수로 지정
+discount_notebook = int(price1 * (1-discount1))
+# 마우스 가격 * (1-0.2)을 정수의 변수로 지정
+discount_mouth = int(price2 * (1-discount2))
+# 키보드 가격 * (1-0.15)을 정수의 변수로 지정
+discount_keyboard = int(price3 * (1-discount3))
+# 다 더한 값 변수로 지정
+total_discount = int(discount_notebook + discount_mouth + discount_keyboard)
+# 해당 변수 출력
+print(f"노트북: {discount_notebook}원")
+print(f"마우스: {discount_mouth}원")
+print(f"키보드: {discount_keyboard}원")
+print(f"총 결제 금액: {total_discount}원")
 
 """
 [실행 결과 예시]
