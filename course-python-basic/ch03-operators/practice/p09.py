@@ -14,7 +14,32 @@
 distance = int(input("이동 거리(m)를 입력하세요: "))
 
 # 아래에 택시 요금을 계산하여 출력하세요
+# 이동거리에서 기본거리를 뺀 수를 구한다
+over_distance = (distance - 1600) * (distance >= 1600)
+ 
+# 뺀 수를 100원당 거리인 131로 나눈다
+over_oil = over_distance // 131
 
+# 나눈 값을 요금으로 산출해야 하기 때문에 100으로 곱한다
+over_price = over_oil * 100
+
+# 기본요금에서 곱한 값을 더한다
+price = 4800 + over_price
+
+## 이동거리와 최종 값을 출력한다(조건문을 활용안하고 기본요금이 4800이 나오게끔 해보자)
+print(f"이동 거리: {distance}")
+print(f"택시 요금: {price}")
+
+# 조건 함수를 사용하여 1600m 이하일 경우 4800원이 나오게 해서
+# 이동거리와 최종 값을 출력한다
+if distance >= 1600 :
+      print(f"이동 거리: {distance}")
+      print(f"택시 요금: {price}")
+else : 
+      print(f"이동 거리: {distance}")
+      print("택시 요금: 4800원")
+      
+      
 
 """
 [실행 결과 예시] (입력: 3500)

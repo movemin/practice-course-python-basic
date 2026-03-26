@@ -8,6 +8,21 @@
 age = int(input("나이 입력: "))
 
 # 아래에 코드를 작성하세요
+# 조건을 입력숫자가 20 보다 같거나 크면 발급대상자라고 출력하고,
+# 그 외에는 할인 쿠폰 발급대상이 아닙니다라고 문구를 달아준다.
+# discound_age = int(20)
+discound_age = int(20)
+
+# if age >= discound_age :
+# print("할인 쿠폰 발급 대상입니다.")
+if age >= discound_age :
+    print("할인 쿠폰 발급 대상입니다.")
+    
+# else :
+# print("할인 쿠폰 발급대상이 아닙니다.")
+
+else :
+    print("할인 쿠폰 발급대상이 아닙니다.")
 
 
 """
