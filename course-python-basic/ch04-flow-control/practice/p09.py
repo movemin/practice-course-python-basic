@@ -16,21 +16,27 @@
 password = "python"
 
 # 아래에 비밀번호 확인 프로그램을 작성하세요
-# while이 멈출려면 비밀번호 3회 이상일 경우 false가 떠야 되기 때문에 먼저 비밀번호 제한을 변수선언 한다.
+
+# while이 멈출려면 비밀번호 3회 이상일 경우 false가 떠야 되기 때문에 
+# 먼저 비밀번호 제한을 변수선언 한다.
 password_number = 3
-# while문 조건식에는 패스워드 횟수가 2 이하로 설정. 또는 맞출 때 까지 계속 반복 되야 되기 때문에 비밀번호가 틀릴경우 반복
+
+# while문 조건식에는 패스워드 횟수가 2 이하로 설정
+# 또는 맞출 때 까지 계속 반복 되야 되기 때문에 비밀번호가 틀릴경우 반복
 while password_number != 0 or password_number > 0 and password != "python" :
-    num = str(input("비밀번호를 입력하세요: ")) # 먼저 비밀번호를 입력할 수 있게 설정한다.
-    if num != password : # 조건문을 입력하여 참일 경우는 틀린 답이기 때문에 참일 경우 다시 입력하라고 한다.
-        password_number = password_number - 1 # password_number를 차감한다.
+    num = str(input("비밀번호를 입력하세요: "))            # 먼저 비밀번호를 입력할 수 있게 설정한다.
+    if num != password :                                  # 조건문을 입력하여 참일 경우는 틀린 답이기 때문에 참일 경우 다시 입력하라고 한다.
+        password_number = password_number - 1             # password_number를 차감한다.
         print(f"틀렸습니다. 남은 기회: {password_number}번")
-    else : # 두 가지 경우의 거짓이 나올 경우 브레이크 한 다음 다음 코드로 넘어간다.
+    else :                                                # 두 가지 경우의 거짓이 나올 경우 브레이크 한 다음 다음 코드로 넘어간다.
         break
 
-if password_number == 0 : # 다음 코드로 넘어간 결과 두가지의 경우 중 카운트가 0일 경우는 잠겼다고 출력
-    print(f"잠김")
-else : # 다음 코드 통과 일 경우 열림이라고 출력
-    print("열림")
+# 다음 코드로 넘어간 결과 두가지의 경우 중 카운트가 0일 경우는 "계정이 잠겼습니다" 출력
+if password_number == 0 : 
+    print(f"계정이 잠겼습니다")
+# 다음 코드 통과 일 경우 "로그인 성공!!"이라고 출력
+else : 
+    print("로그인 성공!!")
 """
 [실행 결과 예시] (3번 틀린 경우)
 비밀번호를 입력하세요: abc

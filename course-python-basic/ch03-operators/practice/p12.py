@@ -14,16 +14,15 @@ attendance = int(input("출석률 입력: "))
 
 # 커트라인을 변수선언한다.
 # score_cutline = int(80)
-# attendance_cutline = int(90)
 score_cutline = int(80)
+# attendance_cutline = int(90)
 attendance_cutline = int(90)
 
 # 조건문으로 80 '이상' and 출석률 90 '초과'이면 "수료 가능"으로 출력되게끔 한다.
 # if score >= score_cutline and attendance > attendance_cutline :
-# print("수료 가능")
 if score >= score_cutline and attendance > attendance_cutline :
+# print("수료 가능")
     print("수료 가능")
-
 # else로 그 외에는 불합격하게 한다
 # else :
 # print("수료 불가")
