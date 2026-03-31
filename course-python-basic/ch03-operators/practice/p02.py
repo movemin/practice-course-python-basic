@@ -14,13 +14,6 @@ change = paid - price
 
 # 아래에 1000원, 500원, 100원 개수를 계산하여 출력하세요
 
-
-
-print(f"거스름돈: {change}원") # 거스름돈
-print(f"1000원: {one_thousand_coin}개") # 1000원 개수
-print(f"500원: {five_hundred_coin}개") # 500원 개수
-print(f"100원: {one_hundred_coin}개") # 100원 개수
-
 """
 [실행 결과 예시] (입력: 2300, 5000)
 거스름돈: 2700원
