@@ -8,20 +8,7 @@
 score = int(input("점수 입력: "))
 
 # 아래에 코드를 작성하세요
-# 합격점 변수선언한다
-# point = int(70)
-point = int(70)
-# if문으로 정수가 70 이상이면 합격으로 출력되게끔 한다
-# if score >= point :
-# print("합격")
-if score >= point :
-    print("합격")
 
-# else문으로 그 외에는 불합격으로 출력되게끔 한다
-# else :
-# print("합격")
-else :
-    print("합격")
 """
 [실행 결과 예시] (입력: 85)
 합격

@@ -10,16 +10,7 @@
 seconds = int(input("초를 입력하세요: "))
 
 # 아래에 시, 분, 초로 변환하여 출력하세요
-# 초를 시간으로 변환
-hour = int(seconds/3600)
-# 입력값을 시간으로 나눈 나머지를 분으로 변환
-hour_seconds = int(seconds%3600)
-minute = int(hour_seconds/60)
-#초는 나머지를 활용하여 변수지정
-seconds2 = int(hour_seconds%60)
-# 시간, 분, 초를 출력.
-print(seconds,"초")
-print(f"{hour}시간 {minute}분 {seconds2}초")
+
 
 """
 [실행 결과 예시] (입력: 3725)

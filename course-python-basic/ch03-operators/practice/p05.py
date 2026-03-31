@@ -13,14 +13,7 @@ height = int(input("키(cm)를 입력하세요: "))
 weight = int(input("몸무게(kg)를 입력하세요: "))
 
 # 아래에 BMI를 계산하여 출력하세요
-# 키를 미터로 바꾸기 위해 키를 100으로 나눈 뒤 실수로 변환하고 제곱을 해준다.
-m_2_height = float(height/100)**2
-# 키를 출력한다.
-print(f"키: {height}cm")
-# 몸무게를 출력한다.
-print(f"몸무게: {weight}kg")
-# BMI 공식을 사용하여 출력한다.
-print(f"BMI: {weight/m_2_height}")
+
 
 """
 [실행 결과 예시] (입력: 175, 70)

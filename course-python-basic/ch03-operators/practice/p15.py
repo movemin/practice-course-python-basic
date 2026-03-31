@@ -11,12 +11,6 @@ is_member = int(input("회원 여부 (1: 회원, 0: 비회원): "))
 
 # 아래에 삼항 연산자로 코드를 작성하세요
 
-# 결과값이 price - (price * (1/5))의 조건은  is_member == 1 이도록 입력
-# 그 외에는 price - (price * (1/20))
-result = price - (price * (1/5)) if is_member == 1 else price - (price * (1/20))
-
-# 가격이 출력되기 때문에 정수의 result 출력
-print(f"최종 가격: {int(result)}원")
 
 """
 [실행 결과 예시] (입력: 10000, 1)

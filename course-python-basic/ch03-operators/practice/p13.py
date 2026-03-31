@@ -8,10 +8,7 @@
 score = int(input("점수 입력: "))
 
 # 아래에 삼항 연산자로 코드를 작성하세요
-# 먼저 result = "합격" 일항 if score >= 70 else "불합격"
-result = "합격" if score >= 70 else "불합격"
-# result 출력
-print(result)
+
 """
 [실행 결과 예시] (입력: 85)
 합격

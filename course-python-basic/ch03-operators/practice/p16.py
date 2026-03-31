@@ -10,10 +10,6 @@ size = int(input("파일 크기(바이트) 입력: "))
 
 # 아래에 삼항 연산자로 코드를 작성하세요
 
-# 결과값이 str(size / 1024) + "KB" 인 경우는 size >= 1024일 경우로 하고, 그렇지 않으면 B로 설정
-result = f"{size / 1024}KB" if size >= 1024 else f"{size}B"
-# result 출력
-print(f"파일 크기: {result}")
 """
 [실행 결과 예시] (입력: 2048)
 파일 크기: 2.0KB
