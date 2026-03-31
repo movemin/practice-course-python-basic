@@ -14,6 +14,20 @@ change = paid - price
 
 # 아래에 1000원, 500원, 100원 개수를 계산하여 출력하세요
 
+# 1000원의 갯수 : change에서 1000으로 나눴을 때 몫을 구한다
+thousand = change // 1000
+
+# 500원의 갯수 : 거스름돈에서 1000으로 나눴을 때의 나머지 값을 500으로 나눈 몫을 구한다
+five_hundred = change % 1000 // 500
+
+# 100원의 갯수 : change % 1000 // 500의 값의 나머지를 100으로 나눈다
+one_hundred = ((change % 1000) % 500) // 100
+
+# 거스름돈을 포함한 위의 결과값을 출력
+print(f"거스름돈: {change}원")
+print(f"1000원: {thousand}개")
+print(f"500원: {five_hundred}개")
+print(f"100원: {one_hundred}개")
 """
 [실행 결과 예시] (입력: 2300, 5000)
 거스름돈: 2700원

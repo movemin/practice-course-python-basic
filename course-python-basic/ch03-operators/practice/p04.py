@@ -11,7 +11,14 @@
 score = int(input("시험 점수: "))
 
 # 아래에 합격 여부를 판정하여 출력하세요
-
+# score 출력
+print(f"점수: {score}")
+# score가 60점 이상일 때 불린형 출력
+print(f"60점 이상인가? {score >= 60}")
+# score가 100점 이하일 때 불린형 출력
+print(f"100점 이하인가? {score <= 100}")
+# score가 60점 이상 이고 score가 100점 이하일 때 불린형 출력
+print(f"합격 조건 충족: {score >= 60 and score <= 100}")
 
 """
 [실행 결과 예시] (입력: 75)
